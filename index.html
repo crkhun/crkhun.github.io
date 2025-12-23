@@ -61,7 +61,7 @@
      window.addEventListener('keydown', e => {
          if (e.code === 'Space') running ? stop() : start();
      });
-     window.addEventListener('touch', () => running ? stop() : start());
+     window.addEventListener('touchstart', () => running ? stop() : start());
 
      function spawnFireworks() {
          fireworks = [];
